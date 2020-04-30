@@ -1,0 +1,33 @@
+<table class="table table-striped">
+
+<thead>
+    <th scope="col"> idUser </th>
+
+    <th scope="col"> nomUser </th>
+    <th scope="col"> prenomUser </th>
+
+    <th scope="col"> adresseMail </th>
+    <th scope="col"> password </th>
+
+    <th scope="col"> role </th>
+</thead>
+
+<tbody> 
+<tr *ngFor="let unUser of listUser">
+   <td> {{unUser.idUser}} </td>
+
+   <td> {{unUser.nomUser}} </td>
+   <td> {{unUser.prenomUser}} </td>
+
+   <td> {{unUser.adresseMail}} </td>
+   <td> {{unUser.password}} </td>
+
+   <td> {{unUser.role.role}} </td>
+
+   <td>
+       <button type="button" (click)="deleteUser(unUser.idUser)" > Supprimer </button>
+   </td>
+   </tr>
+</tbody>
+
+</table>

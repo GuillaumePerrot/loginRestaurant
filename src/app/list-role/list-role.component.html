@@ -1,0 +1,19 @@
+<table class="table table-striped">
+    <thead>
+        <th scope="col"> idRole </th>
+        <th scope="col"> role </th>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let unRole of listRole">
+           <td> {{unRole.idRole}} </td>
+           <td> {{unRole.role}} </td>
+
+           <td>
+               <button type="button" (click)="deleteRole(unRole.idRole)"> Supprimer </button>
+           </td>
+
+        </tr>
+    </tbody>
+
+</table>

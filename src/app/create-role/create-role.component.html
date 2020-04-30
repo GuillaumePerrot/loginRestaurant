@@ -1,0 +1,18 @@
+<form class="bodyUser">
+ 
+    <th class="body">
+     
+        <tr>
+            <div class="form-group">
+                <label for="formGroupExampleInput2"> Entrez le nouveau role : </label>
+                <input style="width:700px" name="prenom" type="text" class="form-control" id="role" [(ngModel)]= "newRole.role">
+            </div>
+          </tr>
+
+      <tr class="boutonUser">
+      <button type = "submit" (click)="creationRole()" class="btn btn-dark"> Créer un Role </button>
+      </tr>
+    
+    </th>
+    
+</form>

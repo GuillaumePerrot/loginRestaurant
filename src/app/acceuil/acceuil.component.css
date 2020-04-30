@@ -1,0 +1,28 @@
+.image{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.bienvenue{
+   font-style : 5px ; 
+}
+
+.texte{
+    
+    top: 50%; /* poussé de la moitié de hauteur du référent */
+    transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+
+    margin-left: 35px;
+    margin-right: 15px;
+    height: 450px;
+    width: 450px;
+    text-align: center;
+    border: 3px solid rgb(158, 33, 33);
+}
+
+.body{
+    
+    background-color: rgb(61, 4, 4);
+    min-height: 600px;
+    color: rgb(228, 181, 183);
+}
